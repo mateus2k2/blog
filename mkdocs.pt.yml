@@ -1,6 +1,8 @@
 site_name: Blog do Mateus
 site_author: Mateus Filipe
 
+site_url: https://mateus2k2.github.io/blog/pt/
+
 docs_dir: 'docs/pt/'
 site_dir: 'site/pt/'
 
