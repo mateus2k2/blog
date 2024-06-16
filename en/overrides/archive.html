@@ -1,0 +1,44 @@
+{% extends "main.html" %}
+
+{% set tags = [] %}
+{% for post in posts %}
+  {% for categorie in post.config.categories %}
+    {% if categorie.lower() not in tags %}
+      {% set _ = tags.append(categorie.lower()) %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+<!-- Page content -->
+{% block container %}
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+
+      <!-- Header -->
+      <header class="md-typeset">
+        {{ page.content }}
+
+        <!-- Tags List -->
+        <br>
+        {% if config.theme.language == 'en' %}
+        <h1>Archive</h1>
+        {% elif config.theme.language == 'pt-BR' %}
+        <h1>Arquivos</h1>
+        {% endif %}
+        
+        <div class="custom_table">
+          <table>
+            <tbody>
+              {% for tag in tags %}
+                <tr>  
+                  <td><a href="{{ tag }}">{{ tag }}</a></td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <a class="pub_button pub_button_clickable" href="blog">All posts</a>
+      </header>  
+    </div>
+  </div>
+{% endblock %}
