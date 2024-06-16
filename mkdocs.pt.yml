@@ -12,24 +12,25 @@ repo_url: https://github.com/mateus2k2/blog
 theme:
   name: material
   custom_dir: overrides
+  logo: assets/logo.png
 
   direction: ltr
   language: en
   palette:
   - media: '(prefers-color-scheme: dark)'
     scheme: default
-    # primary: teal
-    # accent: amber
+    primary: teal
+    accent: indigo
     toggle:
       icon: material/brightness-7 
-      name: Mudar para modo escuro
+      name: Switch to dark mode
   - media: '(prefers-color-scheme: light)'
+    primary: black
     scheme: slate
-    # primary: teal
-    # accent: amber
+    accent: indigo
     toggle:
       icon: material/brightness-7
-      name: Mudar para modo claro
+      name: Switch to light mode
   features:
     - search.suggest
     - search.highlight
