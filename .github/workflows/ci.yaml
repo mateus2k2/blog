@@ -13,11 +13,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Build TR docs
+      - name: Build PT docs
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.tr.yml
+          args: build --config-file=mkdocs.pt.yml
       - name: Build EN docs
         uses: ./
         with:
