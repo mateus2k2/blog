@@ -9,6 +9,8 @@ repo_url: https://github.com/mateus2k2/blog
 
 theme:
   name: material
+  custom_dir: overrides
+
   direction: ltr
   language: en
   palette:
@@ -83,6 +85,12 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
+
+extra_css:
+  - overrides/assets/stylesheets/extra.css
+
+hooks:
+  - overrides/scripts/blogs.py 
 
 copyright: |
   &copy; 2023 <a href="https://github.com/mateus2k2/blog"  target="_blank" rel="noopener">Berkant Şahin</a>
