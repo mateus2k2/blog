@@ -53,10 +53,10 @@ extra:
       link: https://www.instagram.com/berkantsahn
   alternate:
     - name: tr - Türkçe
-      link: https://berkantsahn.github.io/mkdocs-sample/tr/
+      link: https://mateus2k2.github.io/blog/tr/
       lang: tr
     - name: en - English 
-      link: https://berkantsahn.github.io/mkdocs-sample/en/
+      link: https://mateus2k2.github.io/blog/en/
       lang: en  
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
