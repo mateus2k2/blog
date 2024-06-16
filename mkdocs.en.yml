@@ -1,9 +1,12 @@
-site_name: MkDocs Sample
-site_author: Berkant Şahin
+site_name: Blog do Mateus
+site_author: Mateus Filipe
+
 docs_dir: 'docs/en/'
 site_dir: 'site/en/'
+
 repo_name: mateus2k2/blog
 repo_url: https://github.com/mateus2k2/blog
+
 theme:
   name: material
   direction: ltr
@@ -11,31 +14,29 @@ theme:
   palette:
   - media: '(prefers-color-scheme: dark)'
     scheme: default
-    primary: teal
-    accent: amber
+    # primary: teal
+    # accent: amber
     toggle:
-      icon: material/lightbulb
+      icon: material/brightness-7 
       name: Switch to dark mode
   - media: '(prefers-color-scheme: light)'
     scheme: slate
-    primary: teal
-    accent: amber
+    # primary: teal
+    # accent: amber
     toggle:
-      icon: material/lightbulb-outline
+      icon: material/brightness-7 -outline
       name: Switch to light mode
   features:
     - search.suggest
     - search.highlight
-  #  - navigation.indexes
-  #  - navigation.sections
-  #  - navigation.tabs
-  #  - navigation.tabs.sticky
     - navigation.path
-  #  - navigation.top
-  #  - navigation.expand
     - content.code.copy
+    - navigation.tabs
+    - navigation.tabs.sticky
+
   icon:
     repo: fontawesome/brands/git-alt
+
 plugins:
   - search:
       lang: en
@@ -44,13 +45,13 @@ extra:
     provider: mike
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/berkantsahn
+      link: https://github.com/mateus2k2
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/berkantsahn
+      link: https://twitter.com/2k2Mateus
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/berkantsahn
+      link: https://www.linkedin.com/in/mateus-silva-0b34131b5/
     - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/berkantsahn
+      link: https://www.instagram.com/mateus2k2/
   alternate:
     - name: tr - Türkçe
       link: https://mateus2k2.github.io/blog/tr/
@@ -58,9 +59,11 @@ extra:
     - name: en - English 
       link: https://mateus2k2.github.io/blog/en/
       lang: en  
+
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 markdown_extensions:
   - abbr
   - pymdownx.highlight:
@@ -74,5 +77,6 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
+
 copyright: |
-  &copy; 2023 <a href="https://github.com/berkantsahn"  target="_blank" rel="noopener">Berkant Şahin</a>
+  &copy; 2023 <a href="https://github.com/mateus2k2/blog"  target="_blank" rel="noopener">Berkant Şahin</a>
