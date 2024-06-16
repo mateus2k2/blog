@@ -1,10 +1,8 @@
 ---
 hide:
   - navigation
-#   - toc
+  # - toc
+template: category.html
 comments: false
 ---
 
-# Home
-
-Teste

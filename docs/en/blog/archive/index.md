@@ -1,10 +1,7 @@
 ---
 hide:
   - navigation
-#   - toc
+  # - toc
+template: archive.html
 comments: false
 ---
-
-# Home
-
-Teste
