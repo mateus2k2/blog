@@ -87,7 +87,7 @@ markdown_extensions:
   - pymdownx.mark
 
 extra_css:
-  - overrides/assets/stylesheets/extra.css
+  - assets/stylesheets/extra.css
 
 hooks:
   - overrides/scripts/blogs.py 
