@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mkdocs:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    network_mode: host
+    volumes:
+      - .:/docs
+    command: serve -a localhost:8005 --config-file=mkdocs.en.yml
+
+# sudo docker compose up -d --force-recreate

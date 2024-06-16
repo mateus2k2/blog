@@ -1,10 +1,11 @@
 {% extends "main.html" %}
 
-{% set tags = [] %}
+{% set years = [] %}
 {% for post in posts %}
   {% for categorie in post.config.categories %}
-    {% if categorie.lower() not in tags %}
-      {% set _ = tags.append(categorie.lower()) %}
+    {% set year = post.config.date.created.year %}
+    {% if year not in years %}
+      {% set _ = years.append(year) %}
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -20,18 +21,13 @@
 
         <!-- Tags List -->
         <br>
-        {% if config.theme.language == 'en' %}
-        <h1>Archive</h1>
-        {% elif config.theme.language == 'pt-BR' %}
-        <h1>Arquivos</h1>
-        {% endif %}
-        
+        <h1>Categories</h1>
         <div class="custom_table">
           <table>
             <tbody>
-              {% for tag in tags %}
+              {% for year in years %}
                 <tr>  
-                  <td><a href="{{ tag }}">{{ tag }}</a></td>
+                  <td><a href="{{ year  }}">{{ year }}</a></td>
                 </tr>
               {% endfor %}
             </tbody>
