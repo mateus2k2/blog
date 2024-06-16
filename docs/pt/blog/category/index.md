@@ -6,3 +6,4 @@ template: category.html
 comments: false
 ---
 
+# Categorias

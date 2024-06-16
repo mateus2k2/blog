@@ -2,8 +2,7 @@
 # draft: true 
 date: 2024-01-31 
 categories:
-  - Hello
-  - World
+  - Ola
 slug: help-im-trapped-in-a-universe-factory
 ---
 
