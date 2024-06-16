@@ -40,6 +40,11 @@ theme:
 plugins:
   - search:
       lang: en
+  - blog:
+      blog_dir: blog
+      archive: true
+      categories: true 
+      post_url_format: "{slug}"
 extra:
   version:
     provider: mike
@@ -59,11 +64,7 @@ extra:
     - name: en - English 
       link: https://mateus2k2.github.io/blog/en/
       lang: en  
-  - blog:
-      blog_dir: blog
-      archive: true
-      categories: true 
-      post_url_format: "{slug}"
+
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
