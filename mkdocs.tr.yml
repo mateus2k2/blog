@@ -12,7 +12,7 @@ theme:
   custom_dir: overrides
 
   direction: ltr
-  language: pt=BR
+  language: pt-BR
   palette:
   - media: '(prefers-color-scheme: dark)'
     scheme: default
