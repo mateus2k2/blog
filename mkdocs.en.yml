@@ -92,11 +92,11 @@ extra_css:
 hooks:
   - overrides/scripts/blogs.py 
 
-# nav:
-#   - Home: index.md
-#   - Blog: blog/index.md 
-#   - Archive: blog/archive/index.md 
-#   - Categories: blog/category/index.md 
+nav:
+  - Home: index.md
+  - Blog: blog/index.md 
+  - Archive: blog/archive/index.md 
+  - Categories: blog/category/index.md 
 
 copyright: |
   &copy; 2023 <a href="https://github.com/mateus2k2/blog"  target="_blank" rel="noopener">Berkant Şahin</a>
