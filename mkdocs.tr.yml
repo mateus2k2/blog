@@ -1,66 +1,77 @@
-site_name: MkDocs Örnek
-site_author: Berkant Şahin
-docs_dir: 'docs/tr/'
-site_dir: 'site/tr/'
-repo_name: berkantsahn/mkdocs-sample
-repo_url: https://github.com/berkantsahn/mkdocs-sample/
+site_name: Blog do Mateus
+site_author: Mateus Filipe
+
+docs_dir: 'docs/pt/'
+site_dir: 'site/pt/'
+
+repo_name: mateus2k2/blog
+repo_url: https://github.com/mateus2k2/blog
+
 theme:
   name: material
+  custom_dir: overrides
+
   direction: ltr
-  language: tr
+  language: pt=BR
   palette:
   - media: '(prefers-color-scheme: dark)'
     scheme: default
-    primary: teal
-    accent: amber
+    # primary: teal
+    # accent: amber
     toggle:
-      icon: material/lightbulb
-      name: Karanlık moda geç
+      icon: material/brightness-7 
+      name: Switch to dark mode
   - media: '(prefers-color-scheme: light)'
     scheme: slate
-    primary: teal
-    accent: amber
+    # primary: teal
+    # accent: amber
     toggle:
-      icon: material/lightbulb-outline
-      name: Aydınlık moda geç
+      icon: material/brightness-7
+      name: Switch to light mode
   features:
     - search.suggest
     - search.highlight
-  #  - navigation.indexes
-  #  - navigation.sections
-  #  - navigation.tabs
-  #  - navigation.tabs.sticky
     - navigation.path
-  #  - navigation.top
-  #  - navigation.expand
     - content.code.copy
+    - navigation.tabs
+    - navigation.tabs.sticky
+
   icon:
     repo: fontawesome/brands/git-alt
+
 plugins:
   - search:
-      lang: tr
+      lang: pt-BR
+  - blog:
+      blog_dir: blog
+      archive: true
+      categories: true 
+      post_url_format: "{slug}"
 extra:
   version:
     provider: mike
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/berkantsahn
+      link: https://github.com/mateus2k2
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/berkantsahn
+      link: https://twitter.com/2k2Mateus
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/berkantsahn
+      link: https://www.linkedin.com/in/mateus-silva-0b34131b5/
     - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/berkantsahn
+      link: https://www.instagram.com/mateus2k2/
   alternate:
-    - name: tr - Türkçe
-      link: https://mateus2k2.github.io/blog/tr/
-      lang: tr
+    - name: pt - Português
+      link: https://mateus2k2.github.io/blog/pt/
+      lang: pt-BR
     - name: en - English 
       link: https://mateus2k2.github.io/blog/en/
-      lang: en
+      lang: en  
+
+
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 markdown_extensions:
   - abbr
   - pymdownx.highlight:
@@ -74,5 +85,18 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
+
+extra_css:
+  - overrides/assets/stylesheets/extra.css
+
+hooks:
+  - overrides/scripts/blogs.py 
+
+nav:
+  - Home: index.md
+  - Blog: blog/index.md 
+  - Archive: blog/archive/index.md 
+  - Categories: blog/category/index.md 
+
 copyright: |
-  &copy; 2023 <a href="https://github.com/berkantsahn"  target="_blank" rel="noopener">Berkant Şahin</a>
+  &copy; 2023 <a href="https://github.com/mateus2k2/blog"  target="_blank" rel="noopener">Berkant Şahin</a>
