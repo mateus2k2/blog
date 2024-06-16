@@ -24,7 +24,7 @@ theme:
     # primary: teal
     # accent: amber
     toggle:
-      icon: material/brightness-7 -outline
+      icon: material/brightness-7
       name: Switch to light mode
   features:
     - search.suggest
