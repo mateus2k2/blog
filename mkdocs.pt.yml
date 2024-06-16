@@ -12,22 +12,22 @@ theme:
   custom_dir: overrides
 
   direction: ltr
-  language: pt-BR
+  language: en
   palette:
-    - media: '(prefers-color-scheme: dark)'
-      scheme:
-        primary: indigo
-        accent: indigo
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-    - media: '(prefers-color-scheme: light)'
-      scheme:
-        primary: teal
-        accent: amber
-      toggle:
-        icon: material/brightness-7
-        name: Switch to light mode
+  - media: '(prefers-color-scheme: dark)'
+    scheme: default
+    # primary: teal
+    # accent: amber
+    toggle:
+      icon: material/brightness-7 
+      name: Switch to dark mode
+  - media: '(prefers-color-scheme: light)'
+    scheme: slate
+    # primary: teal
+    # accent: amber
+    toggle:
+      icon: material/brightness-7
+      name: Switch to light mode
   features:
     - search.suggest
     - search.highlight
