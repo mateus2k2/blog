@@ -37,11 +37,13 @@ theme:
     - navigation.path
     - content.code.copy
     - navigation.tabs
+    - content.tooltips
 
   icon:
     repo: fontawesome/brands/git-alt
 
 plugins:
+  - glightbox
   - social
   - search:
       lang: en
@@ -77,6 +79,7 @@ extra:
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/javascripts/extra.js
 
 markdown_extensions:
   - abbr
@@ -91,6 +94,29 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - abbr
+  - attr_list
+  - pymdownx.snippets
 
 extra_css:
   - assets/stylesheets/extra.css

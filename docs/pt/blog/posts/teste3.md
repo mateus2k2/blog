@@ -2,9 +2,9 @@
 # draft: true 
 date: 2024-01-31 
 categories:
-  - Hello
-  - World
-slug: test2
+  - Ola
+  - Mundo
+slug: test3
 ---
 
 # Hello world!
