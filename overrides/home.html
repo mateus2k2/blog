@@ -170,7 +170,7 @@
 
         .feature-item:hover {
             background-color: #526cfe47;
-            border-radius: 3px;
+            border-radius: 20px;
         }
     }
 
@@ -372,20 +372,9 @@
 </div>
 
 <div class="top-hr">
-    <div class="hr">
-    </div>
+    <!-- <div class="hr"> -->
+    <!-- </div> -->
 </div>
-
-
-<!-- Toggleable JavaScript execution -->
-{%- if config.home_execute_js -%}
-<script>
-document$.subscribe(function() {
-  console.log("'home_execute_js' is enabled:");
-  {{ config.home_execute_js }}
-}).unsubscribe();
-</script>
-{%- endif -%}
 
 
 {% endblock %}

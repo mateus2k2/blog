@@ -1,5 +1,5 @@
 .md-post{
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgb(83, 103, 172);
   padding: 20px;
   border-radius: 5px;
 }
@@ -11,10 +11,23 @@
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: rgb(30 64 175);
+  background-color: rgb(45, 69, 148);
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .icon{
   padding: 5px;
   display: inline;
+}
+
+.tags_elements:hover {
+  background-color: rgb(38, 70, 177); /* Change this color to your preferred hover background color */
+}
+
+.tags_elements .icon {
+  margin-right: 8px;
 }

@@ -37,7 +37,6 @@ theme:
     - navigation.path
     - content.code.copy
     - navigation.tabs
-    - navigation.tabs.sticky
 
   icon:
     repo: fontawesome/brands/git-alt
@@ -113,7 +112,7 @@ home_tagline: Blog
 home_description: Meu blog
 
 # Cor do Gradiente
-home_gradient_hsla: hsla(0deg,37%,55%,1)
+home_gradient_hsla: hsla(270deg, 30%, 50%, 1)
 
 # Botão(s) Personalizado(s) da Página Inicial
 home_button1_name: Blog                   
