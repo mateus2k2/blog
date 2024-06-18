@@ -2,12 +2,14 @@
 # draft: true 
 date: 2024-01-31 
 categories:
-  - Ola
-  - Mundo
+  - Hello
+  - World
 slug: test2
 ---
 
-# Hello world!
+# Hello world 2!
+
+## teste 1
 
 loremloremloremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremloremloremlorem loremlorem loremlorem loremlorem loremlorem loremlorem   
 
@@ -66,7 +68,7 @@ graph LR
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-
+## teste 2
 
 Text can be {--deleted--} and replacement text {++added++}. This can also be
 combined into {~~one~>a single~~} operation. {==Highlighting==} is also
@@ -78,6 +80,8 @@ Formatting can also be applied to blocks by putting the opening and closing
 tags on separate lines and adding new lines between the tags and the content.
 
 ==}
+
+### teste 3
 
 <div class="grid cards" markdown>
 
