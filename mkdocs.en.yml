@@ -42,6 +42,7 @@ theme:
     repo: fontawesome/brands/git-alt
 
 plugins:
+  - social
   - search:
       lang: en
   - blog:
