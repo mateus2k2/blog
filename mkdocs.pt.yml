@@ -70,7 +70,7 @@ extra:
       lang: en  
   analytics:
     provider: google
-    property: G-EG9FZ3CGSS
+    property: G-QVQFDCGH6E
 
 
 extra_javascript:
@@ -93,6 +93,7 @@ markdown_extensions:
 
 extra_css:
   - assets/stylesheets/extra.css
+  - assets/stylesheets/post-section.css
 
 hooks:
   - overrides/scripts/blogs.py 

@@ -1,0 +1,87 @@
+.services-section {
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures children are contained */
+}
+
+.section-title {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 35px;
+}
+
+.service-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.service-card {
+  font-family: 'Overpass', sans-serif;
+  height: auto;
+  width: 100%; /* Use full width of the column */
+  color: darkgray;
+  background-color: #12192c;
+  border-radius: 12px;
+  margin: 10px 0; /* Adjust margin to avoid overflow */
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+  transition: all .15s ease;
+  cursor: pointer;
+  padding: 15px;
+  border: 1px solid #ccc;
+  transition: transform 0.2s;
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+.title {
+  padding: 15px;
+  font-size: 24px;
+  border-bottom: 2px solid #FAD961;
+  color: #fff;
+}
+
+.bodyin {
+  font-size: 16px;
+  padding: 15px;
+}
+
+.service-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  padding: 15px;
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+.col-md-4 {
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  padding: 10px; /* Add padding to each column */
+  flex: 1 1 calc(20% - 20px); /* Ensure each column takes up to 20% width minus padding */
+}
+
+@media screen and (max-width: 1200px) {
+  .col-md-4 {
+    flex: 1 1 calc(33.33% - 20px); /* Adjust to 3 columns */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .col-md-4 {
+    flex: 1 1 calc(50% - 20px); /* Adjust to 2 columns */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col-md-4 {
+    flex: 1 1 calc(100% - 20px); /* Adjust to 1 column */
+  }
+}

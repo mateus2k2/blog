@@ -93,6 +93,7 @@ markdown_extensions:
 
 extra_css:
   - assets/stylesheets/extra.css
+  - assets/stylesheets/post-section.css
 
 hooks:
   - overrides/scripts/blogs.py 

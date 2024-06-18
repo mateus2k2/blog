@@ -4,7 +4,6 @@
 {% block tabs %}
 {{ super() }}
 
-
 <!-- Stole this styling from the "up42-py" project (link: https://sdk.up42.com/) -->
 <!-- .tx-container Original Green Gradient: hsla(160deg,47%,55%,1) -->
 <style>
@@ -376,6 +375,35 @@
     <!-- </div> -->
 </div>
 
+<!-- ---------------------------------------------------------------------------- -->
+<!-- POST SECTION -->
+<!-- ---------------------------------------------------------------------------- -->
+
+<div class="services-section">
+
+    <!-- make dependent on the config language -->
+    {% if config.theme.language == 'en' %}
+        <h2 class="section-title">Recent</h2>
+    {% endif %}
+    {% if config.theme.language == 'pt' %}
+        <h2 class="section-title">Recentes</h2>
+    {% endif %}
+    
+    <div class="row">
+        {% for post in posts[:5] %}
+            <div class="col-md-4">
+                <a href="{{ post.url }}" class="service-card-link">
+                    <div class="service-card">
+                        <div class="title">
+                            {{ post.title }}
+                        </div>
+                        <p class="bodyin">{{ post.config.date.created.day }}/{{ post.config.date.created.month }}/{{ post.config.date.created.year }}</p>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
 
 {% endblock %}
 {% block content %}{% endblock %}

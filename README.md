@@ -7,3 +7,8 @@ https://mateus2k2.github.io/blog/en
 
 <!-- https://pypi.org/project/mike/ -->
 <!-- https://squidfunk.github.io/mkdocs-material/plugins/social -->
+
+<!-- https://analytics.google.com/analytics/web/#/a318654020p446644822/admin/streams/table/ -->
+<!-- en = G-EG9FZ3CGSS -->
+<!-- pt = G-QVQFDCGH6E -->
+
