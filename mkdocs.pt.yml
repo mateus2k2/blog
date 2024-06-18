@@ -116,6 +116,10 @@ markdown_extensions:
   - attr_list
   - pymdownx.snippets
 
+extra_css:
+  - assets/stylesheets/extra.css
+  - assets/stylesheets/post-section.css
+  
 hooks:
   - overrides/scripts/blogs.py 
 
