@@ -70,7 +70,7 @@ extra:
       lang: en  
   analytics:
     provider: google
-    property: G-EG9FZ3CGSS
+    property: G-2K5W5PNB0S
 
 
 extra_javascript:
