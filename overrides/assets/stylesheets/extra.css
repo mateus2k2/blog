@@ -3,3 +3,18 @@
   padding: 20px;
   border-radius: 5px;
 }
+
+.tags_elements{
+  margin: 20px;
+  border-radius: .5rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: rgb(30 64 175);
+}
+
+.icon{
+  padding: 5px;
+  display: inline;
+}

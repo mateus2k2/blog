@@ -103,3 +103,34 @@ nav:
 
 copyright: |
   &copy; 2024 <a href="https://github.com/mateus2k2/blog"  target="_blank" rel="noopener">Mateus Filipe</a>
+
+### Example Configuration ###
+
+# Custom Homepage Elements
+home_cover_image: assets/images/hero.png
+home_tagline: Blog
+home_description: My blog
+
+# Gradient Color
+home_gradient_hsla: hsla(0deg,37%,55%,1)
+
+# Custom Homepage Button(s)
+home_button1_name: Blog                   
+home_button1_url: Blog/                       
+home_button1_theme: md-button md-button--primary 
+home_button1_icon: people                        
+home_button1_blurb: My Blog
+
+home_button2_name: Archive
+home_button2_url: blog/archive    
+home_button2_theme: md-button 
+home_button2_icon: gear       
+home_button2_blurb: Archive posts organized by year
+
+home_button3_name: Categories
+home_button3_url: blog/category    
+home_button3_theme: md-button 
+home_button3_icon: image      
+home_button3_blurb: Posts organized by categories
+
+home_execute_js: console.log("This is an example!");
