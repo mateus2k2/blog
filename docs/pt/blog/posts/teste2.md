@@ -2,12 +2,12 @@
 # draft: true 
 date: 2024-01-31 
 categories:
-  - Hello
-  - World
+  - Ola
+  - Mundo
 slug: test2
 ---
 
-# Hello world 2!
+# Ola Mundo 2!
 
 ## teste 1
 
