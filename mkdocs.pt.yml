@@ -68,6 +68,9 @@ extra:
     - name: en - English 
       link: https://mateus2k2.github.io/blog/en/
       lang: en  
+  analytics:
+    provider: google
+    property: G-EG9FZ3CGSS
 
 
 extra_javascript:
