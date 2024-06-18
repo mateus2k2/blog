@@ -15,7 +15,7 @@ theme:
   logo: assets/logo.png
 
   direction: ltr
-  language: en
+  language: pt-BR
   palette:
   - media: '(prefers-color-scheme: dark)'
     scheme: default

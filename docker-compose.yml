@@ -8,7 +8,7 @@ services:
     network_mode: host
     volumes:
       - .:/docs
-    command: serve -a localhost:8005 --config-file=mkdocs.en.yml
+    command: serve -a localhost:8005 --config-file=mkdocs.pt.yml
 
 # sudo docker compose up -d --force-recreate
 # sudo docker compose up --force-recreate
