@@ -98,6 +98,14 @@ tags on separate lines and adding new lines between the tags and the content.
 
 lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
 ![Image title](https://dummyimage.com/600x400/eee/aaa)
+![Image title](hero.png)
+![Image title](/blog/en/assets/images/hero.png)
+
+<video style="width:50%" muted="" controls="" alt="type:video">
+   <source src="/blog/en/assets/images/video-teste.mp4" type="video/mp4">
+</video>
+
+<iframe src="https://streamable.com/e/yslhdu" allowfullscreen></iframe>
 
 
 1.  Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis
