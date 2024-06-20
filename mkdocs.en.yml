@@ -71,10 +71,10 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/mateus2k2/
   alternate:
-    - name: pt - Português
+    - name: Português
       link: https://mateus2k2.github.io/blog/pt/
       lang: pt-BR
-    - name: en - English 
+    - name: English 
       link: https://mateus2k2.github.io/blog/en/
       lang: en  
   analytics:

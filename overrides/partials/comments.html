@@ -1,23 +1,18 @@
-{% if page.title != "Home" %}
-{% set script_src = "https://giscus.app/client.js" %}
-{% set repo = "mateus2k2/giscus" %}
-{% set repo_id = "R_kgDOMMGa5Q" %}
-{% set category = "General" %}
-{% set category_id = "DIC_kwDOMMGa5c4CgPIJ" %}
-{% set mapping = "pathname" %}
-{% set strict = "0" %}
-{% set reactions_enabled = "1" %}
-{% set emit_metadata = "0" %}
-{% set input_position = "bottom" %}
-{% set theme = "dark" %}
+{% if (page.meta.comments or true) and page.title != "Home" %}
 
-{% if config.theme.language == 'en' %}
+  <!-- <script defer src="https://appcommento.88367832.xyz/js/commento.js"></script>
+  <div id="commento"></div> -->
+  
+  {% if config.theme.language == 'en' %}
     {% set lang = "en" %}
-{% elif config.theme.language == 'pt-BR' %}
+  {% elif config.theme.language == 'pt-BR' %}
     {% set lang = "pt" %}
-{% endif %}
+  {% endif %}
 
-<script src="{{ script_src }}"
+  <h2 id="__comments">{{ lang }}</h2>
+  <!-- Insert generated snippet here -->
+  
+  <script src="{{ script_src }}"
     data-repo="{{ repo }}"
     data-repo-id="{{ repo_id }}"
     data-category="{{ category }}"
@@ -31,6 +26,41 @@
     data-lang="{{ lang }}"
     crossorigin="anonymous"
     async>
-</script>
+  </script>
 
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]");
+
+    // Set palette on initial load
+    var palette = __md_get("__palette");
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light";
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme);
+    }
+
+    // Register event handlers after document loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]");
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette");
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light";
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame");
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    });
+  </script>
 {% endif %}
