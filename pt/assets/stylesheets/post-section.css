@@ -10,7 +10,8 @@
   margin-bottom: 20px;
   font-size: 2em;
   font-weight: bold;
-  padding: 35px;
+  padding-left: 35px;
+  padding-left: 35px;
 }
 
 .service-card-link {
@@ -30,7 +31,8 @@
   box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
   transition: all .15s ease;
   cursor: pointer;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   border: 1px solid #ccc;
   transition: transform 0.2s;
   box-sizing: border-box; /* Ensures padding and border are included in width */
@@ -57,7 +59,8 @@
 .row {
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap */
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-sizing: border-box; /* Ensure padding is included in the total width */
   justify-content: space-between; /* Distribute space between items */
 }
