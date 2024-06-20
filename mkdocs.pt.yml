@@ -143,23 +143,23 @@ home_description: Meu blog
 # Cor do Gradiente
 home_gradient_hsla: hsla(270deg, 30%, 50%, 1)
 
-# Botão(s) Personalizado(s) da Página Inicial
-home_button1_name: Blog                   
-home_button1_url: Blog/                       
-home_button1_theme: md-button md-button--primary 
-home_button1_icon: people                        
-home_button1_blurb: Meu Blog
+# # Botão(s) Personalizado(s) da Página Inicial
+# home_button1_name: Blog                   
+# home_button1_url: Blog/                       
+# home_button1_theme: md-button md-button--primary 
+# home_button1_icon: people                        
+# home_button1_blurb: Meu Blog
 
-home_button2_name: Arquivo
-home_button2_url: blog/archive    
-home_button2_theme: md-button 
-home_button2_icon: gear       
-home_button2_blurb: Postagens arquivadas organizadas por ano
+# home_button2_name: Arquivo
+# home_button2_url: blog/archive    
+# home_button2_theme: md-button 
+# home_button2_icon: gear       
+# home_button2_blurb: Postagens arquivadas organizadas por ano
 
-home_button3_name: Categorias
-home_button3_url: blog/category    
-home_button3_theme: md-button 
-home_button3_icon: image      
-home_button3_blurb: Postagens organizadas por categorias
+# home_button3_name: Categorias
+# home_button3_url: blog/category    
+# home_button3_theme: md-button 
+# home_button3_icon: image      
+# home_button3_blurb: Postagens organizadas por categorias
 
 home_execute_js: console.log("Este é um exemplo!");
