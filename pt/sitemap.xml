@@ -21,17 +21,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mateus2k2.github.io/blog/pt/blog/test1/</loc>
+         <loc>https://mateus2k2.github.io/blog/pt/blog/basic-homelab/</loc>
          <lastmod>2024-06-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mateus2k2.github.io/blog/pt/blog/test2/</loc>
-         <lastmod>2024-06-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://mateus2k2.github.io/blog/pt/blog/test3/</loc>
+         <loc>https://mateus2k2.github.io/blog/pt/blog/making-a-blog/</loc>
          <lastmod>2024-06-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -41,12 +36,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mateus2k2.github.io/blog/pt/blog/category/ola/</loc>
+         <loc>https://mateus2k2.github.io/blog/pt/blog/category/tech/</loc>
          <lastmod>2024-06-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mateus2k2.github.io/blog/pt/blog/category/mundo/</loc>
+         <loc>https://mateus2k2.github.io/blog/pt/blog/category/life/</loc>
+         <lastmod>2024-06-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mateus2k2.github.io/blog/pt/blog/category/tecnologia/</loc>
+         <lastmod>2024-06-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mateus2k2.github.io/blog/pt/blog/category/react/</loc>
          <lastmod>2024-06-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
