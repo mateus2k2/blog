@@ -5,11 +5,15 @@ categories:
   - Ola
   - Mundo
 slug: test1
+short: "short1 pt"
+draft: true
 ---
 
-# Ola Mundo 1!
+# Hello world 1!
 
 ## teste 1
+
+{{ price(teste_macro_var, 50) }}
 
 loremloremloremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremloremloremlorem loremlorem loremlorem loremlorem loremlorem loremlorem   
 
@@ -98,6 +102,13 @@ tags on separate lines and adding new lines between the tags and the content.
 
 lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
 ![Image title](https://dummyimage.com/600x400/eee/aaa)
+![Image title](/blog/en/assets/images/hero.png)
+
+<video style="width:50%" muted="" controls="" alt="type:video">
+   <source src="/blog/en/assets/images/video-teste.mp4" type="video/mp4">
+</video>
+
+<!-- <iframe src="https://streamable.com/e/yslhdu" allowfullscreen></iframe> -->
 
 
 1.  Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis

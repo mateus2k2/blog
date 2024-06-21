@@ -1,10 +1,11 @@
 ---
-# draft: true 
 date: 2024-01-31 
 categories:
   - Hello
   - World
 slug: test1
+short: "short1 en"
+draft: true
 ---
 
 # Hello world 1!
