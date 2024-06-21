@@ -1,40 +1,16 @@
-<!-- {% if page.title != "Home" %}
+{% if (page.meta.comments or true) and page.title != "Home" %}
+
     {% set script_src = "https://giscus.app/client.js" %}
     {% set repo = "mateus2k2/giscus" %}
     {% set repo_id = "R_kgDOMMGa5Q" %}
     {% set category = "General" %}
     {% set category_id = "DIC_kwDOMMGa5c4CgPIJ" %}
-    {% set mapping = "pathname" %}
-    {% set strict = "0" %}
+    {% set mapping = "specific" %}
+    {% set strict = "1" %}
     {% set reactions_enabled = "1" %}
     {% set emit_metadata = "0" %}
     {% set input_position = "bottom" %}
     {% set theme = "dark" %}
-
-    {% if config.theme.language == 'en' %}
-        {% set lang = "en" %}
-    {% elif config.theme.language == 'pt-BR' %}
-        {% set lang = "pt" %}
-    {% endif %}
-
-    <script src="{{ script_src }}"
-        data-repo="{{ repo }}"
-        data-repo-id="{{ repo_id }}"
-        data-category="{{ category }}"
-        data-category-id="{{ category_id }}"
-        data-mapping="{{ mapping }}"
-        data-strict="{{ strict }}"
-        data-reactions-enabled="{{ reactions_enabled }}"
-        data-emit-metadata="{{ emit_metadata }}"
-        data-input-position="{{ input_position }}"
-        data-theme="{{ theme }}"
-        data-lang="{{ lang }}"
-        crossorigin="anonymous"
-        async>
-    </script>
-{% endif %} -->
-
-{% if (page.meta.comments or true) and page.title != "Home" %}
 
     {% if config.theme.language == 'en' %}
     {% set lang = "en" %}
@@ -52,7 +28,8 @@
     data-category="{{ category }}"
     data-category-id="{{ category_id }}"
     data-mapping="{{ mapping }}"
-    data-strict="{{ strict }}"
+    data-term="{{page.url}}"
+    data-strict="{{strict}}"
     data-reactions-enabled="{{ reactions_enabled }}"
     data-emit-metadata="{{ emit_metadata }}"
     data-input-position="{{ input_position }}"
