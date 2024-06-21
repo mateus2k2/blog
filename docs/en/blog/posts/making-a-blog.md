@@ -9,3 +9,6 @@ short: "How I made my portfolio and blog with mkdocs"
 ---
 
 # Making a Blog
+loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet
+
+<!-- more -->

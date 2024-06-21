@@ -9,3 +9,6 @@ short: "Como construi meu homelab com um laptop antigo"
 ---
 
 # Construindo um Homelab
+loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet
+
+<!-- more -->

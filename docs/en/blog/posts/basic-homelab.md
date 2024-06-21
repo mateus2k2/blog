@@ -9,3 +9,7 @@ short: "How I made my homelab with an old laptop"
 ---
 
 # Making a Homelab
+
+loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet loren ipsum dolor sit amet
+
+<!-- more -->
