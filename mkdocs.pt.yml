@@ -42,7 +42,13 @@ theme:
     repo: fontawesome/brands/git-alt
 
 plugins:
+  - glightbox
   - social
+  - macros:
+      module_name: overrides/scripts/macros
+      include_dir: overrides/include
+      on_error_fail: true
+      on_undefined: strict
   - search:
       lang: pt
   - blog:
@@ -57,6 +63,7 @@ plugins:
         as_update: date.updated
 
 extra:
+  teste_macro_var: 10
   version:
     provider: mike
   social:

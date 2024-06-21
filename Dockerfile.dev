@@ -6,6 +6,7 @@ RUN apk add --no-cache --virtual .build-deps gcc libc-dev libxslt-dev && \
     pip install --no-cache-dir lxml>=3.5.0 && \
     pip install mkdocs-glightbox && \
     pip install mkdocs-rss-plugin && \
+    pip install mkdocs-macros-plugin && \
     apk del .build-deps
 
 RUN pip install --no-cache-dir \

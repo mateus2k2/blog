@@ -11,6 +11,8 @@ slug: test1
 
 ## teste 1
 
+{{ price(teste_macro_var, 50) }}
+
 loremloremloremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremloremloremlorem loremlorem loremlorem loremlorem loremlorem loremlorem   
 
 <!-- more -->

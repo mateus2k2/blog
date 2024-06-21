@@ -45,6 +45,11 @@ theme:
 plugins:
   - glightbox
   - social
+  - macros:
+      module_name: overrides/scripts/macros
+      include_dir: overrides/include
+      on_error_fail: true
+      on_undefined: strict
   - search:
       lang: en
   - blog:
@@ -59,6 +64,7 @@ plugins:
         as_update: date.updated
     
 extra:
+  teste_macro_var: 100
   version:
     provider: mike
   social:
