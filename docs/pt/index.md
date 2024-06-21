@@ -5,7 +5,3 @@ hide:
 comments: false
 template: home.html
 ---
-
-# Home
-
-Teste

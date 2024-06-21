@@ -6,8 +6,3 @@ comments: false
 template: home.html
 description: "Teste"
 ---
-
-# Home
-
-
-Teste

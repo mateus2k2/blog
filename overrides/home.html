@@ -7,6 +7,9 @@
 <!-- Stole this styling from the "up42-py" project (link: https://sdk.up42.com/) -->
 <!-- .tx-container Original Green Gradient: hsla(160deg,47%,55%,1) -->
 <style>
+    body > div.md-container > footer > div > div{
+        margin-top: 0px;
+    }
 
     .md-main {
         flex-grow: 0
@@ -299,4 +302,5 @@
 
 {% endblock %}
 {% block content %}{% endblock %}
-{% block footer %}{% endblock %}
+{% block footer %}{% include "partials/footer.html" %}{% endblock %}
+
