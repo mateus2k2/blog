@@ -19,23 +19,14 @@ jobs:
           fetch-depth: 0
 
       - name: Build PT docs
-        uses: ./
-        with:
-          entrypoint: mkdocs
-          args: build --config-file=mkdocs.pt.yml
+        run: ./<path-to-mkdocs> build --config-file=mkdocs.pt.yml
 
       - name: Build EN docs
-        uses: ./
-        with:
-          entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.yml  
+        run: ./<path-to-mkdocs> build --config-file=mkdocs.en.yml  
 
-      # - name: Copy redirect index page
-      #   run: cp docs/index.html site/index.html
-
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.11
+      # Copy blog/index.html to the root of site directory
+      - name: Copy blog/index.html
+        run: cp blog/index.html site/index.html
 
       - name: Deploy docs to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
@@ -52,6 +43,4 @@ jobs:
 
       - run: pip install mike --force-reinstall --verbose
 
-      # - run: mike deploy --push --update-aliases 1.0 latest --ignore
-
-      # - run: mkdocs gh-deploy --force
+      # Additional steps as needed for deployment
