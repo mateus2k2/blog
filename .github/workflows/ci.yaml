@@ -30,6 +30,9 @@ jobs:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.en.yml  
 
+      - name: Ensure permissions for site directory
+        run: sudo chmod -R 777 site
+
       - name: Copy redirect index page
         run: cp docs/index.html site/index.html
 
