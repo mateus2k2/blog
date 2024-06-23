@@ -1,31 +1,37 @@
-name: ci 
+name: ci
+
 on:
   push:
     branches:
       - main
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
       - name: Build PT docs
         uses: ./
         with:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.pt.yml
+
       - name: Build EN docs
         uses: ./
         with:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.en.yml  
 
-      # - name: Copy redirect index page
-      #   run: sudo cp /index.html /site
+      - name: Copy redirect index page
+        run: cp docs/index.html site/index.html
 
       - uses: actions/setup-python@v4
         with:
@@ -41,7 +47,11 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
+
       - run: pip install mkdocs-material 
+
       - run: pip install mike --force-reinstall --verbose
+
       # - run: mike deploy --push --update-aliases 1.0 latest --ignore
+
       # - run: mkdocs gh-deploy --force
